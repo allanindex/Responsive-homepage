@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+      <span>
+        <img src="assets/images/logo.svg" alt="logo">
+      </span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" id="menu-hamburguer">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" id="menu-hamburguer-close">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+      <ul class="header-options">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </nav>
+
+  <div class="section">
+    
+    <div class="container-1">
+      <picture>
+        <source media="(max-width: 425px)" srcset="assets\images\image-web-3-mobile.jpg">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="" id="img-web3">
+      </picture>
+      
+      <div class="description-container-1">
+        <span class="span-1-container-1">
+          <h1 class="h1-container-1">The Bright Future of Web 3.0?</h1>
+        </span>
+        <span class="span-2-container-1">
+          <p class="p-container-1">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?
+          </p>
+          <button class="button">R E A D &nbsp; M O R E</button>
+        </span>
+      </div>
+    </div>
+    <div class="container-2">
+      <h2 class="h2-container-2">New</h2>
+      <div class="description-container-2">
+        <div class="desc-1-container-2">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p class="p-container-2">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr>
+        </div>
+        <div class="desc-2-container-2">
+          <h3>The Downsides of AI Artistry</h3>
+          <p class="p-container-2">What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr>
+        </div>
+        <div class="desc-3-container-2">
+          <h3 class="h3-container-2">Is VC Funding Drying Up?</h3>
+          <p class="p-container-2">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cards">
+    <span class="item">
+        <img src="assets/images/image-retro-pcs.jpg" alt="" srcset="" class="img-card">
+        <span class="text-card">
+          <span class="number-card">01</span>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </span>
+    </span>
+
+    <span class="item">
+      <img src="assets/images/image-top-laptops.jpg" alt="" srcset="" class="img-card">
+      <span class="text-card">
+        <span class="number-card">02</span>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </span>
+    </span>
+
+    <span class="item">
+        <img src="assets/images/image-gaming-growth.jpg" alt="" srcset="" class="img-card">
+      <span class="text-card">
+        <span class="number-card">03</span>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </span>
+    </span>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/allanindex" target="_blank">Allan Bispo dos Santos</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
